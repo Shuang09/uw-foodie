@@ -1,0 +1,20 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended"], 
+    // eslint:后面不要加空格
+    "parser": "babel-eslint",
+
+    "globals": {
+        "window": true,
+        "document": true,
+        "module": true,
+        "require": true,
+        "console": true,
+        "setTimeout": true
+    },
+
+    "rules": {
+        "react/prop-types": "off",
+        "no-console": "off",
+        "no-debugger": "off"
+    }
+}

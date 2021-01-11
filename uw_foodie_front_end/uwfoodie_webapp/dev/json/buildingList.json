@@ -1,0 +1,30 @@
+{ "meta":
+    {"requests":1793},
+  "data": [
+    {"building_code":"DC"},
+    {"building_code":"DP"},
+    {"building_code":"SLC"},
+    {"building_code":"EIT"},
+    {"building_code":"OPT"},
+    {"building_code":"HH"},
+    {"building_code":"EV3"},
+    {"building_code":"SCH"},
+    {"building_code":"V1"},
+    {"building_code":"AHS"},
+    {"building_code":"REV"},
+    {"building_code":"UC"},
+    {"building_code":"EC3"},
+    {"building_code":"EC5"},
+    {"building_code":"STC"},
+    {"building_code":"UWP"},
+    {"building_code":"PHR"}
+    ]
+}
+
+
+
+
+
+
+
+

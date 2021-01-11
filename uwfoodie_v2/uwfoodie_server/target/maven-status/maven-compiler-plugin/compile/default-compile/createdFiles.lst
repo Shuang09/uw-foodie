@@ -1,0 +1,6 @@
+com/uwfoodie/service/CommentService.class
+com/uwfoodie/Application.class
+com/uwfoodie/mapper/CommentMapper.class
+com/uwfoodie/bean/Comment.class
+com/uwfoodie/controller/CommentController.class
+com/uwfoodie/bean/Result.class

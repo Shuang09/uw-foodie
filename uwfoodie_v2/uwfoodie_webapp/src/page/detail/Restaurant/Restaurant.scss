@@ -1,0 +1,82 @@
+.restaurant-content {
+    font-family: Haettenschweiler, 'Arial Bold', sans-serif;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    .restaurant-basic {
+        color: #2f2f2f;
+        background-color: #fff;
+        font-size: px2rem(14px);
+        margin-top: px2rem(10px);
+        padding-right: px2rem(10px);
+        padding-left: px2rem(15px);
+    }
+    .menu-title {
+        font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+        padding-top: px2rem(15px);
+        padding-bottom: px2rem(15px);
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center;
+    }
+    .menu-section {
+        padding-top: px2rem(15px);
+        padding-bottom: px2rem(15px);
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .menu-day {
+        text-align: center;
+    }
+    .res-section {
+        padding-top: px2rem(15px);
+        padding-bottom: px2rem(15px);
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        &::before {
+            display: block;
+            flex-shrink: 0;
+            content: '';
+            margin-right: px2rem(20px);
+            width: px2rem(16px);
+            height: px2rem(16px);
+            background-size: cover;
+        }
+    }
+    .restaurant-addr::before {
+        width: px2rem(16px);
+        background-image: url('./img/address.png');
+    }
+    .restaurant-send-time::before {
+        width: px2rem(16px);
+        background-image: url('./img/time.png');
+    }
+    .restaurant-info::before {
+        width: px2rem(16px);
+        background-image: url('./img/info.png');
+    }
+
+
+
+    .addr-wrap {
+        display: flex;
+    }
+    .addr-text {
+        flex: 1;
+        line-height: px2rem(20px);
+        margin-top: px2rem(-3px);
+    }
+    .meituan-send {
+        background-color: #ffd161;
+        color: #333;
+        font-size: px2rem(10px);
+        padding: px2rem(2px);
+        border-radius: px2rem(4px);
+        margin-right: px2rem(4px);
+    }
+    .restaurant-pay-type::before {
+        display: none;
+    }
+    .icon {
+        width: px2rem(17px);
+        height: px2rem(17px);
+        margin-right: px2rem(20px);
+    }
+}

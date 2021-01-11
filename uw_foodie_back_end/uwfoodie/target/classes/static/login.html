@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <style>
+        body {
+            background-color: #FAFAFA;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        hr {
+            border: solid 0.5px #E3E3E3;
+        }
+
+        .container {
+            height: 1500px;
+            width: 40%;
+            /*background: rebeccapurple;*/
+            margin: 0px auto;
+        }
+
+        .loginuser {
+            height: 80px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 20px;
+            margin: 5px 0px;
+        }
+
+        .img {
+            width: 50px;
+            height: 50px;
+            margin: 0px auto;
+            cursor: pointer;
+        }
+
+        .img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .username {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .articleList {
+            /*background: white;*/
+            text-align: center;
+        }
+
+        .articleList p {
+            background: white;
+        }
+
+
+        .itemImg img {
+            width: 100%;
+            height: 220px;
+            /*border-radius: 10px;*/
+        }
+
+        .itemRight p {
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        .commont {
+            text-align: center;
+            background: white;
+            padding: 5px;
+        }
+
+        .commont p {
+            line-height: 40px;
+        }
+
+        .detailImg {
+            padding: 5px;
+            background: white;
+            height: 400px;
+        }
+
+        .detailImg img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .articleList p {
+            text-align: left;
+            padding-left: 10px;
+
+        }
+
+        .articleList .tag {
+            font-size: 16px;
+            color: deepskyblue;
+            line-height: 40px;
+            font-weight: bolder;
+        }
+
+        .articleList .title {
+            font-size: 28px;
+            line-height: 40px;
+            height: 40px;
+            font-weight: bolder;
+        }
+
+        .articleList .desc {
+            text-indent: 2em;
+            font-size: 14px;
+            line-height: 18px;
+            color: #5d5e5f;
+        }
+
+        .articleList .time {
+            line-height: 40px;
+            font-size: 13px;
+            color: #5e5e5e;
+        }
+
+        .articleDetail {
+            margin-bottom: 5px;
+        }
+
+        .articleDetail .desc {
+            padding-bottom: 5px;
+        }
+
+        .commont-item textarea {
+            width: 98%;
+            height: 300px;
+            margin-top: 5px;
+            padding: 5px;
+            border: solid 1px #E3E3E3;
+        }
+
+        .submit, .submitClose, .submitLiuyan {
+            border: none;
+            background: green;
+            color: white;
+            width: 100px;
+            padding: 5px 0px;
+        }
+
+        .commont {
+            text-align: center;
+            background: white;
+            padding: 5px;
+        }
+
+        .commont p {
+            line-height: 40px;
+            /*height: 40px;*/
+        }
+
+        .commont .person {
+            text-align: left;
+            padding-left: 5px;
+            font-size: 14px;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .commont .person label {
+            color: darkred;
+            font-size: 12px;
+        }
+
+        .commont .detail {
+            /*background: red;*/
+            line-height: 25px;
+            text-align: left;
+            padding-left: 5px;
+            font-size: 12px;
+            margin-top: 5px;
+            color: dodgerblue;
+            text-indent: 2em;
+            overflow: hidden;
+        }
+
+        .liuyan, .login, .register {
+            background: white;
+            height: 400px;
+            width: 400px;
+            position: fixed;
+            background: white;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: solid 1px #E3E3E3;
+        }
+
+        .publish {
+            background: white;
+        }
+
+        .login, .register {
+            height: 300px;
+        }
+
+
+        .liuyan .title {
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            /*background: #1e73be;*/
+        }
+
+        .liuyan-item {
+            width: 96.5%;
+            margin: 5px;
+        }
+
+        .liuyan-item p, .login p, .register p {
+            text-align: center;
+            background: white;
+        }
+
+        .login p, .register p {
+            line-height: 50px;
+            height: 50px;
+        }
+
+
+        .form-item {
+            /*background: red;*/
+            width: 90%;
+            margin: 0px auto;
+            display: flex;
+            /*height: 50px;*/
+            line-height: 50px;
+            border-bottom: solid 1px #e3e3e3;
+            padding: 3px 0px;
+            overflow: hidden;
+        }
+
+        .form-item .form-item-l {
+            width: 30%;
+            /*background: peru;*/
+            color: #5e5e5e;
+        }
+
+        .form-item .form-item-l p {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .form-item .form-item-r {
+            width: 70%;
+        }
+
+        .form-item .form-item-r input, .form-item .form-item-r textarea {
+            border: 0px;
+            height: 100%;
+            width: 90%;
+            padding-left: 20px;
+        }
+
+        .form-item .form-item-r textarea {
+            height: 200px;
+            border: solid 1px #5e5e5e;
+            padding-top: 5px;
+            margin-top: 20px;
+            border: solid 1px #E3E3E3;
+        }
+
+        .form-item .submitLogin, .form-item .submitRegister {
+            width: 100%;
+            text-align: center;
+        }
+
+        .form-item .submitLogin button, .form-item .submitRegister button {
+            border: none;
+            background: green;
+            color: white;
+            width: 100px;
+            padding: 5px 0px;
+        }
+
+        select {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding-left: 20px;
+            color: #5e5e5e;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="login animated lightSpeedIn">
+    <p class="title">log in</p>
+    <hr>
+    <div class="publish">
+        <div class="form-item">
+            <div class="form-item-l">
+                <p>username</p>
+            </div>
+            <div class="form-item-r">
+                <input name="username" type="text" placeholder="please enter username">
+            </div>
+        </div>
+        <div class="form-item textarea">
+            <div class="form-item-l">
+                <p>password</p>
+            </div>
+            <div class="form-item-r">
+                <input name="password" type="password" placeholder="please enter password">
+            </div>
+        </div>
+
+        <div class="form-item">
+            <div class="submitLogin">
+                <button id="submitLogin">confirm</button>
+                <!--                <button id="submitLoginClose">关闭</button>-->
+                <br>
+                <a href="javascript:void()" onclick="goRegister()">register</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="register animated rotateIn" style="display: none">
+    <p class="title">Register</p>
+    <hr>
+    <div class="publish">
+        <div class="form-item">
+            <div class="form-item-l">
+                <p>Username</p>
+            </div>
+            <div class="form-item-r">
+                <input name="usernameReg" type="text" placeholder="User Name">
+            </div>
+        </div>
+        <div class="form-item textarea">
+            <div class="form-item-l">
+                <p>UserType</p>
+            </div>
+            <div class="form-item-r">
+                <select name="userType" id="userType">
+                    <option value="1">User</option>
+                    <option value="0">Admin</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item textarea">
+            <div class="form-item-l">
+                <p>Password</p>
+            </div>
+            <div class="form-item-r">
+                <input name="passwordReg" type="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-item textarea">
+            <div class="form-item-l">
+                <p>COnfirm Password</p>
+            </div>
+            <div class="form-item-r">
+                <input name="surepassword" type="password" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="form-item">
+            <div class="submitRegister">
+                <button id="submitRegister">Confirm</button>
+                <button id="submitRegisterClose">Back to Log in</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    function goRegister() {
+        $(".register").show()
+        $(".login").hide()
+        $(".zhezhao").show()
+    }
+
+    function goLogin() {
+        $(".login").show()
+        $(".zhezhao").show()
+    }
+
+    $(".zhezhao").click(function () {
+        $(".login").hide()
+        $(".register").hide()
+        $(".liuyan").hide()
+        $(this).hide()
+    })
+
+    //登陆
+    $("#submitLogin").click(function () {
+        let username = $("input[name=username]").val()
+        let password = $("input[name=password]").val()
+        if (!password || !username) {
+            alert("Content cannot be empty")
+            return
+        }
+        $.post(app.serverUrl + "/login", {
+            username: username,
+            password: password
+        }, function (res) {
+            if (res.code == 0) {
+                app.setData("user", JSON.stringify(res.data))
+                let user = res.data
+                console.log(res)
+                if (user.usertype == 0) {
+                    window.location.href = "allCommen.html"
+                } else {
+                    window.location.href = "index.html"
+                }
+            } else {
+                alert(res.msg)
+            }
+        })
+    })
+    $("#submitLoginClose").click(function () {
+        $(".login").hide(300)
+
+    })
+
+    $("#submitRegisterClose").click(function () {
+        $(".register").hide()
+        $(".login").show()
+    })
+
+
+    //注册
+    $("#submitRegister").click(function () {
+        let username = $("input[name=usernameReg]").val()
+        let password = $("input[name=passwordReg]").val()
+        let surepassword = $("input[name=surepassword]").val()
+        let userType = $("#userType").val()
+        if (!password || !username) {
+            alert("Content cannot be empty")
+            return
+        }
+        if (!userType) {
+            alert("Please select a User Type")
+            return
+        }
+        if (password != surepassword) {
+            alert("The two password you enterd did not match")
+            return
+        }
+        $.get(app.serverUrl + "/register", {
+            username: username,
+            password: password,
+            usertype: userType
+        }, function (res) {
+            if (res.code == 0) {
+                $(".register").hide()
+                alert("Registration success!")
+                goLogin()
+            } else {
+                alert(res.msg)
+            }
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+export const GET_LIST_DATA = "GET_LIST_DATA";
+
+export const COMMENT_LIST_DATA = "COMMENT_LIST_DATA";
+export const RESTAURANT_DATA = "RESTAURANT_DATA";
+export const MENU_DATA = "MENU_DATA";
+export const SET_OUTLET_NAME = "SET_OUTLET_NAME";

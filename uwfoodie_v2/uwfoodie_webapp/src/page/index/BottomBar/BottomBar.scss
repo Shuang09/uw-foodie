@@ -1,0 +1,58 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: px2rem(50px);
+    display: flex;
+    border-top: 1px solid #b6b6b6;
+    background-color: rgba(246,246,246,0.95);
+    .btn-item {
+        text-decoration: none;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: px2rem(11px);
+        color: #999;
+        .tab-icon {
+            margin-bottom: 3px;
+            width: px2rem(25px);
+            height: px2rem(25px);
+            background-size: cover;
+        }
+        &.active {
+            color: #515151;
+        }
+        &.home {
+            .tab-icon {
+                background-image: url('./img/homeIcon.png');
+            }
+        }
+        &.home.active {
+            .tab-icon {
+                background-image: url('./img/homeIconActive.png');
+            }
+        }
+        &.map {
+            .tab-icon {
+                background-image: url('./img/mapIcon.png');
+            }
+        }
+        &.map.active {
+            .tab-icon {
+                background-image: url('./img/mapIconActive.png');
+            }
+        }
+        &.me {
+            .tab-icon {
+                background-image: url('./img/meIcon.png');
+            }
+        }
+        &.me.active {
+            .tab-icon {
+                background-image: url('./img/meIconActive.png');
+            }
+        }
+    }
+}

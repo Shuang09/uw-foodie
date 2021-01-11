@@ -1,0 +1,29 @@
+{
+  "data": {
+    "outlet_name": "DC",
+    "average_star": 4.6,
+    "comments": [
+      {
+        "user_name": "NbJ360922414",
+        "comment_time": 1522829153,
+        "order_comment_score": 5,
+        "comment": "Awesome place! The casseroles and buns are actually SO GOOD! The prices are really good too and the food is quite tasty! The buns run out sometimes but that makes sense because they are really good!",
+        "praise_food_tip": 3
+      },
+      {
+        "user_name": "FDS43253",
+        "comment_time": 1522829153,
+        "order_comment_score": 3,
+        "comment": "The servers are OVERALL very very nice! They make a decent effort to ensure you have a good time, which I appreciate. There is ONE server though that REALLY got on my nerves (he basically threatened one of my friends after my friend aggressively tossed his payment but anyways that's a story for another day)", 
+        "praise_food_tip": 4
+      },
+      {
+        "user_name": "GIM959513732",
+        "comment_time": 1523873813,
+        "order_comment_score": 4,
+        "comment": "Their spicy chicken casserole is also quite nice. Their tomato beef one is kind of just beef and ketchup soup (but some people are into that).",
+        "praise_food_tip": 2,
+      }
+    ]
+  }
+}

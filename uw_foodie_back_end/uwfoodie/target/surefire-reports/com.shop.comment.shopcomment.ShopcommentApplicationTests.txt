@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: com.shop.comment.shopcomment.ShopcommentApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 26.693 s <<< FAILURE! - in com.shop.comment.shopcomment.ShopcommentApplicationTests
+shopCommentList  Time elapsed: 1.62 s  <<< ERROR!
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.shopCommentList(ShopcommentApplicationTests.java:38)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.shopCommentList(ShopcommentApplicationTests.java:38)
+
+register  Time elapsed: 1.048 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.register(ShopcommentApplicationTests.java:25)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.register(ShopcommentApplicationTests.java:25)
+
+allUserList  Time elapsed: 1.046 s  <<< ERROR!
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.allUserList(ShopcommentApplicationTests.java:56)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.allUserList(ShopcommentApplicationTests.java:56)
+
+del  Time elapsed: 1.019 s  <<< ERROR!
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.del(ShopcommentApplicationTests.java:44)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.del(ShopcommentApplicationTests.java:44)
+
+login  Time elapsed: 1.046 s  <<< ERROR!
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.login(ShopcommentApplicationTests.java:32)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.login(ShopcommentApplicationTests.java:32)
+
+myCommentList  Time elapsed: 1.007 s  <<< ERROR!
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.myCommentList(ShopcommentApplicationTests.java:68)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.myCommentList(ShopcommentApplicationTests.java:68)
+
+allShopCommentList  Time elapsed: 1.026 s  <<< ERROR!
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.allShopCommentList(ShopcommentApplicationTests.java:50)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.allShopCommentList(ShopcommentApplicationTests.java:50)
+
+delUser  Time elapsed: 1.025 s  <<< ERROR!
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.delUser(ShopcommentApplicationTests.java:62)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.shop.comment.shopcomment.ShopcommentApplicationTests.delUser(ShopcommentApplicationTests.java:62)
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .shop {
+        width: 50%;
+        margin: 0px auto;
+        border: solid 1px darkblue;
+    }
+
+    .list {
+        width: 100%;
+        display: flex;
+    }
+
+    .shop .item {
+        width: 100%;
+        height: 200px;
+        border: solid 1px rebeccapurple;
+        margin: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: hotpink;
+        cursor: pointer;
+        color: white;
+    }
+
+    .item p {
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .dp {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .bh {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-top: 10px;
+    }
+
+    .commont {
+        margin: 5px;
+        width: 100%;
+    }
+
+    .commont p {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .commen-item {
+        margin-bottom: 5px;
+    }
+
+    .commen-item section {
+        background-color: oldlace;
+        /*height: 50px;*/
+        line-height: 50px;
+        padding-left: 15px;
+        font-weight: bolder;
+        color: black;
+        font-size: 16px;
+    }
+
+    .commen-item section label {
+        font-size: 14px;
+        color: red;
+    }
+
+    .commen-item-desc {
+        line-height: 20px !important;
+        font-size: 12px !important;
+    }
+
+    .top p {
+        text-align: center;
+        font-weight: bolder;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .publish textarea {
+        margin: 5px;
+        width: 97.5%;
+        height: 200px;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+    .publish .sure button {
+        border: none;
+        background: green;
+        color: white;
+        width: 100px;
+        padding: 10px 0px;
+    }
+
+    .publish .sure {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .delete {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .delete button {
+        border: none;
+        background: green;
+        color: white;
+        width: 100px;
+        padding: 10px 0px;
+    }
+
+    .top label {
+        cursor: pointer;
+    }
+
+    .selectTab {
+        background: deeppink;
+        padding: 10px 5px;
+        color: white;
+    }
+</style>
+<body>
+
+
+<div class="shop  animated fadeInUpBig">
+    <div class="top">
+        <p><label onclick="goUser()">user list</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label onclick="goComment()"
+                                                                                            class="selectTab">评论列表</label>
+        </p>
+        <hr>
+    </div>
+    <div class="top">
+        <p><label onclick="logout()">sign out</label>
+        </p>
+        <hr>
+    </div>
+    <div class="list">
+        <div class="commont">
+            <div class="commen-item">
+                <section>post time&nbsp;&nbsp;&nbsp;&nbsp;<label>2019/12/12 12:12:15</label></section>
+                <section class="commen-item-desc">路过青年园，看到小湖里面碧绿的叶子以及耸立其间的花朵，才发现花中的仙子—荷花，已经带着她优雅的气质和高贵的姿态来到了这个酷热的盛夏。
+
+                    西边的晚霞已渐渐退去了，晚风吹来，似乎要掀一开满湖荷花的裙子，而娇羞的荷花急于恢复自己的姿态，整理自己的妆容。修长的枝干，宽大的叶子，以及红白相间层次分明的花朵，使得荷花无愧于花中仙子的称号，也难怪晚风会如此地钟情于这满湖的荷花。晚风时强时弱，强时似乎发起了迅猛进攻的态势，使得荷花难以招架；弱时好像缠绕在荷花的周围，轻声细语，诉说着绵绵的情思。晚风过后，荷花依旧直直的立着，纤细的枝干托起她美丽的裙子，裙子上是她娇美的面容，她似乎对晚风的这几番追逐不甚在意，意态慵懒，容颜还未完全展开，有些花还在包裹一着，似乎一个羞涩的少女对这个世界还有几分的顾虑，不敢完全展露自己。
+
+                    记得唐代山水田园派诗人的杰出代表孟浩然诗中的一句“荷风送香气，竹露滴清响”，以写景状物来表达其清幽孤寂的感受。孟浩然早年失意，后来隐居山林田园，时常恨无知音。如今虽有荷风，但无香气，花也未全开，而我在这个湖心的亭子里独自徘徊。一湖的碧水还有多情的荷花，陪伴着我度过了这个有些燥一热的傍晚。
+
+                    先前班级组织过一次落雁岛之游，放眼望去，看到田田的荷叶，出一水不高，心里就默默地念着一定不能错过“小荷才露尖尖角”的情景。晚上已经十点多了，景区里已经消去了白日的喧嚣，看着湖光山影，以及远处透过的微光，心里感到出奇的宁静。此时看着已经睡熟的荷叶，心里有着几分寄托。而今的青年园，荷花虽没有完全的绽放，却有不少的韵致，只此，已经足够。
+                </section>
+                <div class="delete">
+                    <button>delete</button>
+                </div>
+            </div>
+            <div class="commen-item">
+                <section>post time&nbsp;&nbsp;&nbsp;&nbsp;<label>2019/12/12 12:12:15</label></section>
+                <section class="commen-item-desc">路过青年园，看到小湖里面碧绿的叶子以及耸立其间的花朵，才发现花中的仙子—荷花，已经带着她优雅的气质和高贵的姿态来到了这个酷热的盛夏。
+
+                    西边的晚霞已渐渐退去了，晚风吹来，似乎要掀一开满湖荷花的裙子，而娇羞的荷花急于恢复自己的姿态，整理自己的妆容。修长的枝干，宽大的叶子，以及红白相间层次分明的花朵，使得荷花无愧于花中仙子的称号，也难怪晚风会如此地钟情于这满湖的荷花。晚风时强时弱，强时似乎发起了迅猛进攻的态势，使得荷花难以招架；弱时好像缠绕在荷花的周围，轻声细语，诉说着绵绵的情思。晚风过后，荷花依旧直直的立着，纤细的枝干托起她美丽的裙子，裙子上是她娇美的面容，她似乎对晚风的这几番追逐不甚在意，意态慵懒，容颜还未完全展开，有些花还在包裹一着，似乎一个羞涩的少女对这个世界还有几分的顾虑，不敢完全展露自己。
+
+                    记得唐代山水田园派诗人的杰出代表孟浩然诗中的一句“荷风送香气，竹露滴清响”，以写景状物来表达其清幽孤寂的感受。孟浩然早年失意，后来隐居山林田园，时常恨无知音。如今虽有荷风，但无香气，花也未全开，而我在这个湖心的亭子里独自徘徊。一湖的碧水还有多情的荷花，陪伴着我度过了这个有些燥一热的傍晚。
+
+                    先前班级组织过一次落雁岛之游，放眼望去，看到田田的荷叶，出一水不高，心里就默默地念着一定不能错过“小荷才露尖尖角”的情景。晚上已经十点多了，景区里已经消去了白日的喧嚣，看着湖光山影，以及远处透过的微光，心里感到出奇的宁静。此时看着已经睡熟的荷叶，心里有着几分寄托。而今的青年园，荷花虽没有完全的绽放，却有不少的韵致，只此，已经足够。
+                </section>
+                <div class="delete">
+                    <button>delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script>
+
+    let user = app.getData("user")
+    let param = app.getQueryString();
+    $(".bh label").html(param.id)
+    loadCommentList()
+
+    function loadCommentList() {
+        $.get(app.serverUrl + "/allShopCommentList", function (res) {
+            $(".commont").html("")
+            $.each(res.data, function (index, val) {
+                console.log(index)
+                $(".commont").append("<div class=\"commen-item\">\n" +
+                    "                <section>user:" + val.username + "&nbsp;&nbsp;&nbsp;&nbsp;<label>" + val.createtime + "</label></section>\n" +
+                    "                <section class=\"commen-item-desc\">\n" + val.comment +
+                    "                </section>\n" +
+                    "            </div>" +
+                    "<div class=\"delete\">\n" +
+                    "                    <button onclick='del(" + val.commentId + ")'>删除</button>\n" +
+                    "                </div>")
+            })
+        })
+    }
+
+    function saveComment() {
+        var val = $("#content").val();
+        if (!val) {
+            alert("please add comment")
+            return
+        }
+        if (user) {
+            user = JSON.parse(user)
+            $.post(app.serverUrl + "/publishComment", {
+                outletID: param.id,
+                username: user.username,
+                comment: val
+            }, function (res) {
+                alert("add success!")
+                window.location.reload()
+            })
+        } else {
+            alert("you have not log in yet")
+        }
+    }
+
+    function del(commentId) {
+        $.get(app.serverUrl + "/del/" + commentId, function (res) {
+            if (confirm("confirm delete")) {
+                window.location.reload()
+            }
+
+        })
+    }
+
+    function goUser() {
+        window.location.href = "allUser.html"
+    }
+
+    function goComment() {
+        window.location.href = "allCommen.html"
+    }
+
+
+    function logout() {
+        localStorage.clear()
+        window.location.href = "login.html"
+    }
+</script>
+</body>
+</html>
